@@ -1,0 +1,9 @@
+category,filename,dice,iou,precision,recall,saved_path
+Good,cju17x0j4nfc10993y31pvlgs.jpg,0.9657905067971624,0.933844170977595,0.9981505944517832,0.9354627615358766,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\good_cju17x0j4nfc10993y31pvlgs.png
+Good_Alt,cju17otoe119u0799nqcbl8n1.jpg,0.9657612073349112,0.933789386149672,0.9926121406080628,0.9403246904072078,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\good_alt_cju17otoe119u0799nqcbl8n1.png
+Medium,cju8bqxxurs6i0850mu7mtef9.jpg,0.2627696082494736,0.151257777608123,0.1519637357959448,0.9702022427892856,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\medium_cju8bqxxurs6i0850mu7mtef9.png
+Medium_Alt,cjz14qsk2wci60794un9ozwmw.jpg,0.2627182683872387,0.1512237558287975,0.1512237558287975,1.0,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\medium_alt_cjz14qsk2wci60794un9ozwmw.png
+Poor,cju2t16vuucaq0835xcpsivn2.jpg,0.1501244304781074,0.081153799180616,0.081153799180616,1.0,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\poor_cju2t16vuucaq0835xcpsivn2.png
+Poor_Alt,cju7ejm2l2ncl0801wq6y84nw.jpg,0.1495281210270346,0.0808054003555161,0.0811037612968429,0.9564562626393012,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\poor_alt_cju7ejm2l2ncl0801wq6y84nw.png
+Very_Poor,cju0tl3uz8blh0993wxvn7ly3.jpg,0.0121810803600263,0.0061278621707819,0.0061278621707819,1.0,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\very_poor_cju0tl3uz8blh0993wxvn7ly3.png
+Very_Poor_Alt,cju76o55nymqd0871h31sph9w.jpg,0.0130614440816265,0.0065736527396487,0.0065814987593799,0.8464891041162228,d:\ML-PROJECT\results\feature_extraction_audit\visual_validation\very_poor_alt_cju76o55nymqd0871h31sph9w.png

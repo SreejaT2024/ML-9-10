@@ -5,6 +5,10 @@ from src.features.shape_features import extract_shape_features
 from src.features.color_features import extract_color_features
 from src.features.texture_features import extract_texture_features
 from src.features.feature_pipeline import StageAFeaturePipeline
+from src.features.shape_features_v2 import extract_shape_features_v2
+from src.features.color_features_v2 import extract_color_features_v2
+from src.features.texture_features_v2 import extract_texture_features_v2
+from src.features.feature_pipeline_v2 import StageAFeaturePipelineV2, FeaturePipelineV2
 
 __all__ = [
     "ROIExtractor",
@@ -12,4 +16,10 @@ __all__ = [
     "extract_color_features",
     "extract_texture_features",
     "StageAFeaturePipeline",
+    "extract_shape_features_v2",
+    "extract_color_features_v2",
+    "extract_texture_features_v2",
+    "StageAFeaturePipelineV2",
+    "FeaturePipelineV2",
 ]
+

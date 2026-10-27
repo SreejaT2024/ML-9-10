@@ -76,6 +76,44 @@ class SegmentationConfig:
 
 
 @dataclass
+class SegmentationV2Config:
+    """Active contour v2 (MorphGAC + Vascular Saliency + Component Selection) parameters."""
+
+    # Specular highlight detection and inpainting
+    specular_threshold: int = 245
+    specular_inpaint_radius: int = 3
+    specular_inpaint_method: str = "telea"  # 'telea' or 'ns'
+
+    # Saliency map
+    clahe_clip_limit: float = 2.0
+    clahe_grid_size: Tuple[int, int] = (8, 8)
+    lumen_dark_threshold: int = 30
+
+    # Seed generation
+    seed_saliency_percentile: float = 90.0
+    seed_min_area: int = 20
+    seed_max_area: int = 6000
+    seed_contrast_floor: float = 0.15
+
+    # Morphological Geodesic Active Contour
+    gac_iterations: int = 80
+    gac_smoothing: int = 1
+    gac_balloon: float = 1.0
+    gac_threshold: float = 0.30
+    gac_sigma: float = 1.5
+    gac_alpha: float = 100.0
+
+    # Component filtering and scoring
+    min_component_area_ratio: float = 0.001
+    max_component_area_ratio: float = 0.50
+    weight_log_area: float = 0.25
+    weight_contrast: float = 0.35
+    weight_centrality: float = 0.15
+    weight_border_penalty: float = 0.25
+    acceptance_threshold: float = 0.30
+
+
+@dataclass
 class FeatureConfig:
     """Feature extraction parameters."""
 
@@ -99,6 +137,7 @@ class GlobalConfig:
     paths: PathConfig = field(default_factory=PathConfig)
     dataset: DatasetConfig = field(default_factory=DatasetConfig)
     segmentation: SegmentationConfig = field(default_factory=SegmentationConfig)
+    segmentation_v2: SegmentationV2Config = field(default_factory=SegmentationV2Config)
     feature: FeatureConfig = field(default_factory=FeatureConfig)
     logging: LogConfig = field(default_factory=LogConfig)
 
